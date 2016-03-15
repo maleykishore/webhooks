@@ -7,6 +7,9 @@ router.get('/', function(req, res, next) {
 });
 
 router.post('/paymenthooks', function(req, res, next){
+    console.log("request payload");
+    console.log(req.body);
+    console.log("**********************************");
    res.json({"status":"success","code":0});
 });
 
